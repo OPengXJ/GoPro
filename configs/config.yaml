@@ -1,12 +1,16 @@
 mysql:
+    base:
+        maxidleconn = 10
+        maxopenconn = 100
+        connmaxlifetime = 10
     read:
-        Host: 127.0.0.1:3306
+        Host: 81.70.10.150:3307
         User: root
-        Pass: 123456
+        Pass: peng123456
         Name: "go_pro"
     write:
-        Host: 127.0.0.1:3306
+        Host: 81.70.10.150:3307
         User: root
-        Pass: 123456
+        Pass: peng123456
         Name: "go_pro"
 
