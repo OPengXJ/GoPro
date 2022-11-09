@@ -4,6 +4,6 @@ import "gorm.io/gorm"
 
 type Admin struct{
 	gorm.Model
-	AdminName string
-	AdminPass string
+	UserName string
+	UserPass string
 }

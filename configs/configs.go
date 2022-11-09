@@ -28,6 +28,7 @@ type Config struct {
 			Name string `yaml:"name"`
 		} `yaml:"mysql.write"`
 	} `yaml:"mysql"`
+	JwtPass string `yaml:"jwtpass"`
 }
 
 func init() {

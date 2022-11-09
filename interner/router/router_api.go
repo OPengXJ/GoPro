@@ -10,7 +10,7 @@ func setApiRouter(r *gin.Engine){
 	adminHandler:=admin.New()
 	login:=r.Group("/api")
 	{
-		login.GET("/login",adminHandler.Login())
+		login.POST("/login",adminHandler.Login())
 		login.POST("/create",adminHandler.Create())
 	}
 

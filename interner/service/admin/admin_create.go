@@ -10,8 +10,8 @@ type CreateAdminData struct{
 }
 func(s *Service)Create(data *CreateAdminData)error{
 	model:=admin.NewModel()
-	model.AdminName=data.Username
-	model.AdminPass=data.Password
+	model.UserName=data.Username
+	model.UserPass=data.Password
 	err:=model.Create(s.db.Write)
 	if err!=nil{
 		return err

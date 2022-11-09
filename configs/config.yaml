@@ -4,13 +4,13 @@ mysql:
         maxopenconn = 100
         connmaxlifetime = 10
     read:
-        Host: 81.70.10.150:3307
+        Host: 81.70.10.151:3307
         User: root
         Pass: peng123456
         Name: "go_pro"
     write:
-        Host: 81.70.10.150:3307
+        Host: 81.70.10.151:3307
         User: root
         Pass: peng123456
         Name: "go_pro"
-
+jwtpass: "OrmsUCgCJnyuidlk"
