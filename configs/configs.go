@@ -29,6 +29,15 @@ type Config struct {
 		} `yaml:"mysql.write"`
 	} `yaml:"mysql"`
 	JwtPass string `yaml:"jwtpass"`
+	Redis struct{
+		DBaddr string `yaml:"dbaddr"`
+		DBpass string `yam;:"dbpass"`
+		DB	int	`yaml:"db"`
+		MaxRetries int `yaml:"maxretries"`
+		PoolSize int `yaml:"poolsize"`
+		MinIdleConns int `yaml:"minidleconns"`
+
+	}`yaml:"redis"`
 }
 
 func init() {

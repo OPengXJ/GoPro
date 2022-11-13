@@ -24,6 +24,7 @@ func(h *Handle)Login()gin.HandlerFunc{
 			ctx.String(http.StatusBadRequest,"登陆名或者密码不正确：%v",err)
 		}
 		tokenString:=token.CreateToken(ctx,*res)
+		ctx.SetCookie("token",tokenString,3600*24,"/","",false,true)
 		ctx.JSON(http.StatusOK,gin.H{
 			"user":res,
 			"token":tokenString,
