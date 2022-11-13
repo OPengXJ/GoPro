@@ -21,4 +21,4 @@ redis:
     maxretries: 3
     poolsize: 10
     minidleconns: 5
-test1
+test2
