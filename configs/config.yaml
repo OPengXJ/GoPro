@@ -15,8 +15,8 @@ mysql:
         Name: "go_pro"
 jwtpass: "OrmsUCgCJnyuidlk"
 redis:
-    dbaddr: 43.139.144.29:6380
-    dbpass: peng123456
+    dbaddr: 43.139.144.28:6380
+    dbpass: peng12345
     db: "0"
     maxretries: 3
     poolsize: 10
