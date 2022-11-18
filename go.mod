@@ -5,6 +5,7 @@ go 1.19
 require gorm.io/gorm v1.24.0
 
 require (
+	github.com/gin-contrib/pprof v1.4.0 // indirect
 	github.com/go-redis/redis v6.15.9+incompatible // indirect
 	github.com/go-sql-driver/mysql v1.6.0 // indirect
 )
