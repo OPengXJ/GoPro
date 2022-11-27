@@ -14,6 +14,7 @@
 - Jwt
 - Redis
 - Pprof
+- Zap
 
 ## 题外话：
 
